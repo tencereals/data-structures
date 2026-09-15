@@ -1,0 +1,7 @@
+# 忽略 macOS 文件夹设置
+.DS_Store
+
+# 忽略常见编译产物
+*.o
+*.out
+*.dSYM/x
