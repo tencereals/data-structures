@@ -20,7 +20,8 @@ int main()
     SqListInsert(&s1,2,3);
     SqListInsert(&s1,0,100);
     SqListInsert(&s1,0,200);
-
     SqListPrint(&s1);
+    SqListDelete(&s1,0);
+    SqListPrint(&s1);    
     SqListDestroy(&s1);
 }
