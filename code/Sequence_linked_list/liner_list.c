@@ -72,3 +72,13 @@ int ....{
 // int capacity; // 动态数组的容量空间的⼤⼩
 // }SqList;
 // //-->Sequencelist.h
+/*3.2.8 复杂度分析
+插入的时间复杂度
+a:best situation: i = n+1在表尾插入且无需扩容不需要移动元素，时间复杂度为O（n）
+b:bad situation：i = 1 在表头插入需要将所有元素整体向后移动一步，执行n次，时间复杂度为O（n），并且需要进行扩容处理
+c：average situation： p = 1/n+1； 故平均情况为n/2，整体时间复杂度为o（n）
+同理删除中 best situation：i = n->O（1） bad situation : i = 1 -> O(n) average situation: (n-1)/2 
+
+
+
+*/

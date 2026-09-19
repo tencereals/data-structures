@@ -106,3 +106,39 @@ void SqListPrint(SqList* ps)
    }
    printf("\n");
 }
+// 检测顺序表是否为空，空返回true，否则返回false
+bool EmptySqList(SqList* ps)
+{
+    assert(ps);
+    return ps->size == 0;
+}
+// 获取顺序表中有效元素个数
+int SqListSize(SqList* ps)
+{
+    assert(ps);
+    return ps->size;
+}
+// 以下接⼝复⽤上⾯的Insert和Delete即可完成
+// 头插尾插
+// 尾插
+void SqListPushBack(SqList* ps, SqDataType x)
+{
+  assert(ps);
+  SqListInsert(ps,ps->size,x);
+}
+void SqListPushFront(SqList* ps, SqDataType x)
+{
+  assert(ps);
+  SqListInsert(ps,0,x);
+}
+// 头删尾删
+void SqListPopBack(SqList* ps)
+{
+    assert(ps);
+    SqListDelete(ps,ps->size);
+}
+void SqListPopFront(SqList* ps)
+{
+    assert(ps);
+    SqListDelete(ps,0);
+}
